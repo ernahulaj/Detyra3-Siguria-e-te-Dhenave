@@ -7,6 +7,7 @@ Detyra e trete ne kuader te lendes "Siguria e te dhenave" ne Fakultetin e Inxhin
 Meqenese DES-i ka 16 raunde, *Key Schedule* do te jape si output *16 round keys*, nga nje per secilin raund. Secili prej ketyre çelesave ka gjatesi prej 48 bitash.
 
 Ne DES perdoren 8 SBox:
+
 ![SBox e DES](https://upload.wikimedia.org/wikipedia/commons/4/44/DES_S-box.jpg)
 
 Ne kete repository kemi implementuar punen e SBox-eve dhe fitimin e 16 SubKey 48 bitesh per secilin round te DES-it, me ane te gjuhes programuese **Python**.
