@@ -5,7 +5,7 @@ Detyra e trete ne kuader te lendes "Siguria e te dhenave" ne Fakultetin e Inxhin
 **Data Encryption Standard (DES)** eshte block cipher 64 bitesh me 16 raunde dhe çeles me gjatesi prej 56 bitesh.
 
 Meqenese DES-i ka 16 raunde, *Key Schedule* do te jape si output *16 round keys*, nga nje per secilin raund. Secili prej ketyre çelesave ka gjatesi prej 48 bitash.
-Ne vazhdim eshte shembulli qe kemi perdorur per testimin e funksionit tone Key Schedule
+Ne vazhdim eshte shembulli qe kemi perdorur per testimin e funksionit tone Key Schedule:
 
 ![Key Schedule i DES](https://i.ibb.co/1626QFL/subkeys.png)
 
