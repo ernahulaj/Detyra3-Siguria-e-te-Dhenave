@@ -7,7 +7,7 @@ Detyra e trete ne kuader te lendes "Siguria e te dhenave" ne Fakultetin e Inxhin
 Meqenese DES-i ka 16 raunde, *Key Schedule* do te jape si output *16 round keys*, nga nje per secilin raund. Secili prej ketyre çelesave ka gjatesi prej 48 bitash.
 Ne vazhdim eshte shembulli qe kemi perdorur per testimin e funksionit tone Key Schedule
 
-![Key Schedule i DES](https://ibb.co/q515jTd)
+![Key Schedule i DES](https://i.ibb.co/1626QFL/subkeys.png)
 
 Ne DES perdoren 8 SBox:
 
