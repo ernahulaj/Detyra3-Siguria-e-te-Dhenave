@@ -1,11 +1,17 @@
+# Implementimi i punes se SBoxave S1, ... , S8 te algoritmit DES
+
+# x eshte 6 bitesh
+# Indexi qe kthehet eshte ne intervalin {0,...,63}
+
+
 def index(x):
-	msb = x >> 5  
-	lsb = x & 1  
-	row = (msb << 1) ^ lsb  
-	col = (x >> 1) & 0xf  
-	return row * 16 + col 
+	msb = x >> 5  # most significant bit - biti me peshen me te madhe
+	lsb = x & 1  # least significant bit - biti me peshen me te vogel
+	row = (msb << 1) ^ lsb  # dy bitat e jashtem te x-it
+	col = (x >> 1) & 0xf  # kater bitat e brendshem te x-it
+	return row * 16 + col  # indeksi i listes
 
-
+# Per definimin e ketyre listave jemi bazuar ne:
 s1 = [14, 4, 13, 1, 2, 15, 11, 8, 3, 10, 6, 12, 5, 9, 0, 7,
       0, 15, 7, 4, 14, 2, 13, 1, 10, 6, 12, 11, 9, 5, 3, 8,
       4, 1, 14, 8, 13, 6, 2, 11, 15, 12, 9, 7, 3, 10, 5, 0,
@@ -48,9 +54,11 @@ s8 = [13, 2, 8, 4, 6, 15, 11, 1, 10, 9, 3, 14, 5, 0, 12, 7,
 
 s = [s1, s2, s3, s4, s5, s6, s7, s8]
 
-
+# x eshte 6 bitesh
+# i eshte ne intervalin {1,...,8}
 
 def S(i, x):
 	return s[i - 1][index(x)]
 
+# testimi
 print(S(5,27))
